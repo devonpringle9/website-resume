@@ -1,0 +1,152 @@
+
+/* Defaults */
+:root {
+    --main-box-color: rgba(107, 107, 255, 0.8);
+    --page-content-background: rgba(255, 255, 255, 0);
+    --shadow-color: rgba(42, 2, 116, 0.671);
+}
+
+
+/* background */
+
+body {
+    background-image: url("images/nepal-wallpaper-hd-1920x1200-474952.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color: #bbd3f3;
+}
+
+.background-opacity {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin-top: -2em;
+    padding-bottom: 2em;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+}
+
+
+
+/* General settings */
+
+body {
+    margin: 0 0 0;
+    padding: 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Page layout
+    Trying to make it look a bit like this one I think:
+    https://colorlib.com/wp/html5-resume-templates/
+ */
+
+.page-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+}
+
+.sidebar {
+    width: 25%;
+    border-radius: 1.5em;
+    margin-top: 5em !important;
+}
+
+.page-content {
+    width: 75%;
+    background-color: var(--page-content-background);
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+
+
+/* Page box segments */
+
+.page-box {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em 0.5em;
+    padding: 1em 1em 1em;
+    box-shadow: 0 0 1em var(--shadow-color);
+    border-radius: 1.5em;
+    background-color: var(--main-box-color);
+}
+
+.sidebar {
+    padding: 0.5em 1.5em 0.5em;
+    box-shadow: 0 0 1em var(--shadow-color);
+}
+
+
+
+/* Sidebar */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em 0.5em;
+    background-color: var(--main-box-color);
+}
+
+.sidebar a {
+    margin: 1.5em 1.5em 1.5em;
+}
+
+/* Page content */
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Primary box */
+
+.primary-box {
+    padding: 5em 4em 5em;
+    background-color: var(--main-box-color);
+}
+
+
+/* Submarine */
+
+#submarine.page-box img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Debugging */
+/* .end-of-page {
+    background-color: red;
+}
+
+.page-layout {
+    background-color: red;
+}
+
+.sidebar {
+    background-color: purple;
+}
+
+.page-content {
+    /* background-color: rgb(5, 252, 46);
+    border: 5px solid black;
+}
+
+.page-box {
+    border: 5px solid black;
+    background-color: powderblue;
+}
+
+.primary-box {
+    background-color: rgb(255, 166, 50);
+} */
